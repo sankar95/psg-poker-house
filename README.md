@@ -39,3 +39,9 @@ PORT=8080 node server.js
 
 - **Server**: Node.js `http` + hand-rolled WebSocket (RFC 6455) — no npm
 - **Frontend**: Vanilla HTML/CSS/JS with WebSocket client
+
+
+## Deployment
+
+- Used Render and deployed there
+URL - https://psg-poker-house.onrender.com
