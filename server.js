@@ -673,7 +673,9 @@ async function handleMessage(ws, msg){
 const HTML = fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
 
 const server = http.createServer((req,res)=>{
-  if(req.url==='/'||req.url==='/index.html'){
+const path = req.url.split('?')[0];
+if(path==='/'||path==='/index.html'){
+
     res.writeHead(200,{'Content-Type':'text/html'});
     res.end(HTML);
   } else {
